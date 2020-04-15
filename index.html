@@ -4,14 +4,20 @@
 <title>JERRY XIA</title>
 <style>
 @media screen and (min-width: 601px) {
-  div.example {
-    font-size: 80px;
+  .navbar {
+    font-size: 1vw;
+  }
+  img{  
+  width: 50%;
   }
 }
 
 @media screen and (max-width: 600px) {
-  div.example {
-    font-size: 30px;
+  .navbar {
+    font-size: 3w;
+  }
+img {
+  width: 100%;
   }
 }
 html, body {
@@ -27,21 +33,22 @@ html, body {
 }
 img {
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 50%;
   z-index: 0;
 }
 .navbar {
   overflow: hidden;
-  background-color: #fbfbfb;
+  background-color: #ffffff00;
   position: fixed;
   top: 1vw;
   right: 1vw;
   width: 100%;
   z-index: 1;
   text-align: center;
+  font-family: TimesNewRoman;
+  font-weight: normal;
 }
 .navbar a {
   float: center;
