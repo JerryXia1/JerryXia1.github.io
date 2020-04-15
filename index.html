@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
+
 <title>JERRY XIA</title>
 <style>
+@media screen and (min-width: 601px) {
+  div.example {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 30px;
+  }
+}
 html, body {
   height: 100%;
   margin: 0;
+  overflow: hidden;
 }
 
 .frame {
@@ -19,13 +31,45 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 50%;
+  z-index: 0;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #fbfbfb;
+  position: fixed;
+  top: 1vw;
+  right: 1vw;
+  width: 100%;
+  z-index: 1;
+  text-align: center;
+
+}
+.navbar a {
+  float: center;
+  display: inline;
+  color: #000000;
+  text-align: center;
+  padding: 150px 50px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #696969;
 }
 </style>
+<head>
 
 </head>
 <body>
 
-<div class="frame"><img src="handxia.gif" alt="XIA">2D 3D</div>
+
+<div class="frame">
+<div class="navbar">
+  <a href="#2d">2D</a>
+  <a href="#3d">3D</a>
+</div>
+<img src="handxia.gif" alt="XIA">
+</div>
 
 
 </body>
